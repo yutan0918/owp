@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-  # validates :title, presence: true, length: { maximum: 23 }
+  validates :title, presence: true
   validate :image_content_type, if: :was_attached?
   has_one_attached :thumbnail
   has_rich_text :content
