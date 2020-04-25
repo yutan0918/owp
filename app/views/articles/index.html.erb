@@ -2,7 +2,7 @@
 
 <h1>Articles</h1>
 
-<% if @articles %>
+<% unless @articles.empty? %>
   <table>
     <thead>
       <tr>
